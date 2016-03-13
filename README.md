@@ -36,9 +36,12 @@ Options:
 Prerequisites
 -------------
 On a protected environment (physical/logical/virtualized workstation):
-* The **whole configuration** is stored at the following path `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\`
-* The **application security rules** are stored in this file `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\sec_globauth.xml`
-* **Workspace access control** (if implemented) is defined in the following file `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\workspaces.xml`
+* The **whole configuration** is stored at the following path  
+ `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\`
+* The **application security rules** are stored in this file  
+ `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\sec_globauth.xml`
+* **Workspace access control** (if implemented) is defined in the following file  
+ `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\workspaces.xml`
  
 Examples
 --------
