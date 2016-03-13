@@ -36,7 +36,7 @@ Options:
 Prerequisites
 -------------
 On a protected environment (physical/logical/virtualized workstation):
-* The **whole configuration** is stored at the following path  
+* The **whole configuration** is stored in this directory  
  `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\`
 * The **application security rules** are stored in this file  
  `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\sec_globauth.xml`
