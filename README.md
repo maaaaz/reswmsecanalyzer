@@ -35,30 +35,26 @@ Options:
 
 Prerequisites
 -------------
-* On a protected environment (physical/logical/virtualized workstation), the whole configuration is stored the following path `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\` and the application security rules are stored in this file: 
- ```
- C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\sec_globauth.xml
- ```
-* Workspace access control (if implemented) is defined in the following file:
- ```
- C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\workspaces.xml
- ```
+On a protected environment (physical/logical/virtualized workstation):
+* The **whole configuration** is stored at the following path `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\`
+* The **application security rules** are stored in this file `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\sec_globauth.xml`
+* **Workspace access control** (if implemented) is defined in the following file `C:\Program Files (x86)\RES Software\Workspace Manager\Data\DBCache\Objects\workspaces.xml`
  
 Examples
 --------
-* Some example rules and their associated graphs are provided in the [`examples`](examples/) folder. For each example, a pretty-print version `_prettyprint.xml` is also included
+* Some example rules and their associated graphs are provided in the [`examples`](examples/) folder. For each example, a **pretty-print** version `_prettyprint.xml` is also included
 * For the [`examples/multiple-rules`](examples/multiple-rules):
  * The policy defined in the RES Console looks like:
  ![](examples/multiple-rules/policy_example.png)
  * Searching a path to `cmd` gives that:
- ![](examples/multiple-rules/graph_to_cmd.png)
- ```
-$ python/reswmsecanalyzer.py -i examples/multiple-rules/sec_globauth.xml -t cmd -g
+  ```
+$ python reswmsecanalyzer.py -i examples/multiple-rules/sec_globauth.xml -t cmd -g
 [+] Number of enabled rules: 4
 [+] Possible path to 'cmd.exe': ['.', 'calc.exe', 'cmd.exe']
 [+] Possible path to 'cmd.exe': ['.', 'notepad.exe', 'cmd.exe']
  ```
- 
+ ![](examples/multiple-rules/graph_to_cmd.png)
+
 Dependencies
 ------------
 * Python NetworkX: `apt-get install python-networkx` or `pip install networkx`
