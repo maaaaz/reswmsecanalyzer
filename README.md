@@ -45,7 +45,7 @@ On a protected environment (physical/logical/virtualized workstation):
  
 Examples
 --------
-* Some example rules and their associated graphs are provided in the [`examples`](examples/) folder. For each example, a **pretty-print** version `_prettyprint.xml` is also included
+* Some **example rules and their associated graphs** are provided in the [`examples`](examples/) folder. For each example, a **pretty-print** version `_prettyprint.xml` is also included
 * For the [`examples/multiple-rules`](examples/multiple-rules):
  * The policy defined in the RES Console looks like:
  ![](examples/multiple-rules/policy_example.png)
