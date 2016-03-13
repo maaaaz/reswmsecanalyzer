@@ -62,7 +62,7 @@ Dependencies
 ------------
 * Python NetworkX: `apt-get install python-networkx` or `pip install networkx`
 * Python Matplotlib: `apt-get install python-matplotlib` or `pip install matplotlib`
-* `pip install -r requirements.txt`
+* Or more simply, `pip install -r requirements.txt`
 
 Roadmap
 -------
