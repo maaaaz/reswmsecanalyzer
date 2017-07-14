@@ -45,25 +45,27 @@ On a protected environment (physical/logical/virtualized workstation):
  
 Examples
 --------
-* Some **example rules and their associated graphs** are provided in the [`examples`](examples/) folder. For each example, a **pretty-print** version `_prettyprint.xml` is also included
-* For the [`examples/multiple-rules`](examples/multiple-rules):
- * The policy defined in the RES Console looks like:
- ![](examples/multiple-rules/policy_example.png)
- * Searching a path to `cmd` gives that:
+* Some **example rules and their associated graphs** are provided in the [`reswmsecanalyzer/examples`](reswmsecanalyzer/examples/) folder. For each example, a **pretty-print** version `_prettyprint.xml` is also included
+* For the [`reswmsecanalyzer/examples/multiple-rules`](reswmsecanalyzer/examples/multiple-rules):
+  * The policy defined in the RES Console looks like:
+  ![](reswmsecanalyzer/examples/multiple-rules/policy_example.png)
+  * Searching a path to `cmd` gives that:
   ```
-$ python reswmsecanalyzer.py -i examples/multiple-rules/sec_globauth.xml -t cmd -g
-[+] Number of enabled rules: 4
-[+] Possible path to 'cmd.exe': ['.', 'calc.exe', 'cmd.exe']
-[+] Possible path to 'cmd.exe': ['.', 'notepad.exe', 'cmd.exe']
- ```
- ![](examples/multiple-rules/graph_to_cmd.png)
+  $ python reswmsecanalyzer.py -i examples/multiple-rules/sec_globauth.xml -t cmd -g
+  [+] Number of enabled rules: 4
+  [+] Possible path to 'cmd.exe': ['.', 'calc.exe', 'cmd.exe']
+  [+] Possible path to 'cmd.exe': ['.', 'notepad.exe', 'cmd.exe']
+  ```
+  ![](reswmsecanalyzer/examples/multiple-rules/graph_to_cmd.png)
 
-Dependencies
-------------
-* Python NetworkX: `apt-get install python-networkx` or `pip install networkx`
-* Python Matplotlib: `apt-get install python-matplotlib` or `pip install matplotlib`
-* Or more simply, `pip install -r requirements.txt`
-
+Dependencies and installation
+------------------------------
+* The easiest way: `pip install reswmsecanalyzer`
+* Or `pip install -r requirements.txt`
+* Or installing manually each dependency:
+  * Python NetworkX: `apt-get install python-networkx` or `pip install networkx`
+  * Python Matplotlib: `apt-get install python-matplotlib` or `pip install matplotlib`  
+  
 Roadmap
 -------
 * Improve the possible path output description

@@ -155,10 +155,12 @@ def draw_graph(nx_graph_orig, nx_graph_new, nx_labels, opts):
     
     return
 
-def main(options, arguments):
+def main():
     """
         Dat main
     """
+    
+    options, arguments = parser.parse_args()
     
     if (options.input_file == None):
         parser.error('Please specify a valid input file')
@@ -177,5 +179,4 @@ def main(options, arguments):
     return
     
 if __name__ == "__main__" :
-    options, arguments = parser.parse_args()
-    main(options, arguments)
+    main()
